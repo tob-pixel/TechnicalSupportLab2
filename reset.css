@@ -46,3 +46,14 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* Font */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; /* Example font size */
+}
+
+.my-element {
+    font-weight: 500; /* Use specific weights you linked to */
+}
