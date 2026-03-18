@@ -21,11 +21,10 @@
 </head>
 <body>
 
-<header class="main-header">
+<header class="main-header" role="banner">
     <div class="container">
         <a href="/" aria-label="Головна сторінка Сумського державного університету">
-            <img src="UniLogo.png" alt="Логотип Сумського державного університету" class="logo" width="150" height="150">
-        </a>
+            <img src="UniLogo.png" alt="Офіційна емблема Сумського державного університету" class="logo" width="150" height="150">        </a>
         <div class="titles">
             <h1 lang="uk">Інформаційна система мобільної підтримки фітнесу користувача на платформі iOS</h1>
             <p class="subtitle" lang="en">Mobile fitness tracking app for iOS</p>
@@ -33,24 +32,24 @@
     </div>
 </header>
 
-<main class="container">
+<main class="container" role="main">
 
-    <section id="abstract" class="section">
-        <h2>Короткий опис</h2>
+    <section id="abstract" class="section" aria-labelledby="abstract-title">
+        <h2 id="abstract-title">Короткий опис</h2>
         <article>
             <p>Проєкт представляє алгоритм динамічної адаптації навантаження. Система коригує вагу або кількість повторень для наступного тренування на основі суб'єктивної оцінки складності попередньої сесії за методом RPE.</p>
             <p>Усі розрахунки та генерація рекомендацій відбуваються безпосередньо на пристрої за допомогою фреймворків Apple Core ML. Це вирішує проблему залежності від інтернет-з'єднання та платних підписок.</p>
         </article>
     </section>
 
-    <section id="methodology" class="section">
-        <h2>Мета дослідження</h2>
+    <section id="methodology" class="section" aria-labelledby="methodology-title">
+        <h2 id="methodology-title">Мета дослідження</h2>
         <p>Вектор розвитку проєкту спрямований на вдосконалення та впровадження системи динамічної адаптації навантаження та узагальнення інформації з використанням мовних моделей на платформі Apple.</p>
     </section>
 
-    <section id="tasks" class="section">
-        <h2>Основні завдання</h2>
-        <ul>
+    <section id="tasks" class="section" aria-labelledby="tasks-title">
+        <h2 id="tasks-title">Основні завдання</h2>
+        <ul role="list">
             <li>Аналіз предметної області та існуючих рішень.</li>
             <li>Проєктування архітектури інформаційної системи.</li>
             <li>Розробка та тестування програмного забезпечення.</li>
@@ -58,35 +57,35 @@
         </ul>
     </section>
 
-    <section id="visuals" class="section">
-        <h2>Об'єкт дослідження</h2>
-        <figure>
+    <section id="visuals" class="section" aria-labelledby="visuals-title">
+        <h2 id="visuals-title">Об'єкт дослідження</h2>
+        <figure role="group" aria-labelledby="fig1-caption">
             <picture>
                 <source srcset="object-research.webp" type="image/webp">
                 <img src="object-research.jpg"
-                     alt="Графічна візуалізація параметрів алгоритму та структури графа навантаження"
+                     alt="Структурна схема алгоритму динамічної адаптації тренувального навантаження з відображенням вузлів графа та логічних зв'язків між ними"
                      width="300"
                      height="200"
                      loading="lazy"
                      class="responsive-img">
             </picture>
-            <figcaption>Рис. 1 — Візуалізація параметрів графа та його структури.</figcaption>
+            <figcaption id="fig1-caption">Рис. 1 — Візуалізація параметрів графа та його структури.</figcaption>
         </figure>
     </section>
 
-    <section id="results" class="section">
-        <h2>Очікувані результати</h2>
+    <section id="results" class="section" aria-labelledby="results-title">
+        <h2 id="results-title">Очікувані результати</h2>
         <p>Заплановано створення зручної системи для самостійного детального відстеження прогресу фізичних вправ. Програмний продукт має забезпечувати позитивний користувацький досвід.</p>
     </section>
 
 </main>
 
-<footer class="main-footer">
+<footer class="main-footer" role="contentinfo">
     <div class="container">
-        <h2>Контактна інформація</h2>
-        <address>
-            <p>Електронна пошта: <a href="mailto:info@fitly-app.edu.ua">info@fitly-app.edu.ua</a></p>
-            <p>Телефон: <a href="tel:+380000000000">+380 00 000 00 00</a></p>
+        <h2 id="contact-title">Контактна інформація</h2>
+        <address aria-labelledby="contact-title">
+            <p>Електронна пошта: <a href="mailto:info@fitly-app.edu.ua" aria-label="Надіслати електронний лист на info@fitly-app.edu.ua">info@fitly-app.edu.ua</a></p>
+            <p>Телефон: <a href="tel:+380000000000" aria-label="Зателефонувати за номером +380 00 000 00 00">+380 00 000 00 00</a></p>
             <p>Сумський державний університет, м. Суми, Україна</p>
         </address>
     </div>
