@@ -1,94 +1,121 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Опис алгоритму динамічної адаптації навантаження на основі RPE та Core ML для iOS. Ефективні тренування без інтернету.">
-    <meta name="keywords" content="Fitly, Fitness App, iOS, Sumy State University, СумДУ, Core ML, RPE">
-    <meta property="og:title" content="Fitly — система мобільної підтримки фітнесу для iOS">
-    <meta property="og:description" content="Алгоритм динамічної адаптації навантаження на основі RPE та Core ML. Тренуйтеся ефективно та автономно.">
+    <meta name="description" content="The project includes an algorithm for dynamic adaptation of vantagement. The system not only implements the plan, but changes the number of repetitions at the onset of training based on a subjective assessment of the importance of the previous exercise (RPE - Rate of Perceived Exertion).">
+    <meta name="keywords" content="Fitly, Fitness App, iOS, Sumy State University">
+    <meta property="og:title" content="Fitly is a mobile fitness support system for iOS">
+    <meta property="og:description" content="Algorithm for dynamic adaptation of vantagement based on RPE and Core ML. Train effectively without using the Internet.">
     <meta property="og:url" content="https://fitly-app.edu.ua/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Fitly Project">
     <meta property="og:locale" content="uk_UA">
-    <title>Fitly — Mobile fitness support system for iOS</title>
+    <title>Mobile fitness tracking app for iOS</title>
+
+    <link rel="canonical" href="https://fitly-app.edu.ua/">
 
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="reset.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Fitly",
+            "operatingSystem": "iOS",
+            "applicationCategory": "FitnessApplication",
+            "description": "Algorithm for dynamic adaptation of vantagement based on RPE and Core ML.",
+            "url": "https://fitly-app.edu.ua/",
+            "author": {
+                "@type": "EducationalOrganization",
+                "name": "Sumy State University"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "featureList": "Dynamic adaptation of repetitions, RPE-based assessment, offline Core ML processing"
+        }
+    </script>
 </head>
 <body>
 
-<header class="main-header" role="banner">
+<header class="main-header">
     <div class="container">
-        <a href="/" aria-label="Головна сторінка Сумського державного університету">
-            <img src="UniLogo.png" alt="Офіційна емблема Сумського державного університету" class="logo" width="150" height="150">        </a>
+        <img src="UniLogo.png" alt="Sumy State University" class="logo" width="150" height="150">
         <div class="titles">
-            <h1 lang="uk">Інформаційна система мобільної підтримки фітнесу користувача на платформі iOS</h1>
-            <p class="subtitle" lang="en">Mobile fitness tracking app for iOS</p>
+            <h1 lang="uk">Information system for mobile fitness support for a student on the iOS platform</h1>
+            <h2 lang="en">Mobile fitness tracking app for iOS</h2>
         </div>
     </div>
 </header>
 
-<main class="container" role="main">
+<main class="container">
 
-    <section id="abstract" class="section" aria-labelledby="abstract-title">
-        <h2 id="abstract-title">Короткий опис</h2>
-        <article>
-            <p>Проєкт представляє алгоритм динамічної адаптації навантаження. Система коригує вагу або кількість повторень для наступного тренування на основі суб'єктивної оцінки складності попередньої сесії за методом RPE.</p>
-            <p>Усі розрахунки та генерація рекомендацій відбуваються безпосередньо на пристрої за допомогою фреймворків Apple Core ML. Це вирішує проблему залежності від інтернет-з'єднання та платних підписок.</p>
-        </article>
+    <section id="abstract" class="section">
+        <h3>Short description</h3>
+        <p>The project includes an algorithm for dynamic adaptation of vantagement. The system not only implements the plan, but changes the number of repetitions at the onset of training based on a subjective assessment of the importance of the previous exercise (RPE - Rate of Perceived Exertion).</p>
+        <p>All calculations and generation of recommendations are carried out on the device using Apple Core ML frameworks, which solves the problem of longevity on the Internet and subscriptions.</p>
     </section>
 
-    <section id="methodology" class="section" aria-labelledby="methodology-title">
-        <h2 id="methodology-title">Мета дослідження</h2>
-        <p>Вектор розвитку проєкту спрямований на вдосконалення та впровадження системи динамічної адаптації навантаження та узагальнення інформації з використанням мовних моделей на платформі Apple.</p>
+    <section id="methodology" class="section">
+        <h3>Meta surveillance</h3>
+        <p>Vector development of the project aimed at the thorough implementation of the system of dynamic adaptation to attract, update information on new models on the Apple platform..</p>
     </section>
 
-    <section id="tasks" class="section" aria-labelledby="tasks-title">
-        <h2 id="tasks-title">Основні завдання</h2>
-        <ul role="list">
-            <li>Аналіз предметної області та існуючих рішень.</li>
-            <li>Проєктування архітектури інформаційної системи.</li>
-            <li>Розробка та тестування програмного забезпечення.</li>
-            <li>Оцінка ефективності отриманих результатів.</li>
+    <section id="tasks" class="section">
+        <h3>Main premises</h3>
+        <ul>
+            <li>Analysis of the subject area and essential solutions.</li>
+            <li>Design of information system architecture.</li>
+            <li>Software development and testing.</li>
+            <li>Assessing the effectiveness of the results.</li>
         </ul>
     </section>
 
-    <section id="visuals" class="section" aria-labelledby="visuals-title">
-        <h2 id="visuals-title">Об'єкт дослідження</h2>
-        <figure role="group" aria-labelledby="fig1-caption">
+    <section id="visuals" class="section">
+        <h3>Object of investigation</h3>
+        <figure>
             <picture>
                 <source srcset="object-research.webp" type="image/webp">
                 <img src="object-research.jpg"
-                     alt="Структурна схема алгоритму динамічної адаптації тренувального навантаження з відображенням вузлів графа та логічних зв'язків між ними"
-                     height="700"
-                     loading="lazy"
-                     class="responsive-img">
+                     alt="Graphic representation of the object of investigation"
+                     width="300"
+                     height="200"
+                     style="max-width: 100%; height: auto;"
+                     class="responsive-img"
+                     loading="lazy">
             </picture>
-            <figcaption id="fig1-caption">Рис. 1 — Візуалізація параметрів графа та його структури.</figcaption>
+            <figcaption>Rice. 1 — Visualization of the chart parameters and itself.</figcaption>
         </figure>
     </section>
 
-    <section id="results" class="section" aria-labelledby="results-title">
-        <h2 id="results-title">Очікувані результати</h2>
-        <p>Заплановано створення зручної системи для самостійного детального відстеження прогресу фізичних вправ. Програмний продукт має забезпечувати позитивний користувацький досвід.</p>
+    <section id="results" class="section">
+        <h3>Calculated results</h3>
+        <p>It is planned to develop a manual system for independent detailed tracking of the progress of physical rights.</p>
+        <p>The user should enjoy using it.</p>
     </section>
 
 </main>
 
-<footer class="main-footer" role="contentinfo">
+<footer class="main-footer">
     <div class="container">
-        <h2 id="contact-title">Контактна інформація</h2>
-        <address aria-labelledby="contact-title">
-            <p>Електронна пошта: <a href="mailto:info@fitly-app.edu.ua" aria-label="Надіслати електронний лист на info@fitly-app.edu.ua">info@fitly-app.edu.ua</a></p>
-            <p>Телефон: <a href="tel:+380000000000" aria-label="Зателефонувати за номером +380 00 000 00 00">+380 00 000 00 00</a></p>
-            <p>Сумський державний університет, м. Суми, Україна</p>
-        </address>
+        <h3>Contact information</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +380 00 000 00 00</p>
     </div>
 </footer>
 
+<script src="scripts/script.js" defer></script>
 </body>
 </html>
