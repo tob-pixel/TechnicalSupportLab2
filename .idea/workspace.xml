@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9bee5ee-f1f4-40c9-8867-9a158036b8ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "english__version",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "F:/Projects/Web/Технічна підтримка програмного забезпечення/Lab2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
